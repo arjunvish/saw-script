@@ -3285,6 +3285,11 @@ primitives = Map.fromList
     Experimental
     []
 
+  , prim "yosys_verify_sequential_offline_sally"  "YosysSequential -> String -> Term -> TopLevel ()"
+    (pureVal yosys_verify_sequential_sally)
+    Experimental
+    []
+
     ---------------------------------------------------------------------
 
   , prim "mr_solver_prove" "Term -> Term -> TopLevel ()"
