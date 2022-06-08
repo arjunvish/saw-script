@@ -1743,7 +1743,7 @@ primitives = Map.fromList
     [ "Write the current goal to the given file in SMT-Lib2 format." ]
 
   , prim "w4_offline_smtlib2"  "String -> ProofScript ()"
-    (pureVal offline_smtlib2)
+    (pureVal w4_offline_smtlib2)
     Current
     [ "Write the current goal to the given file in SMT-Lib2 format." ]
 
