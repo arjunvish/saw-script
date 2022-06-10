@@ -32,6 +32,9 @@ RUN cp yices*/bin/yices-smt2 rootfs/usr/local/bin \
 # Install CVC4 1.8
 RUN curl -L https://github.com/CVC4/CVC4/releases/download/1.8/cvc4-1.8-x86_64-linux-opt --output rootfs/usr/local/bin/cvc4
 
+# Install CVC5 1.0
+RUN curl -L https://github.com/cvc5/cvc5/releases/download/cvc5-1.0.0/cvc5-Linux --output rootfs/usr/local/bin/cvc5
+
 # Install MathSAT 5.6.3 - Uncomment if you are in compliance with MathSAT's license.
 # RUN curl -L https://mathsat.fbk.eu/download.php?file=mathsat-5.6.3-linux-x86_64.tar.gz | tar xz
 # RUN cp mathsat-5.6.3-linux-x86_64/bin/mathsat rootfs/usr/local/bin
